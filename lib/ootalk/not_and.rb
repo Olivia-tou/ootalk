@@ -12,7 +12,7 @@ module Ootalk
     public
 
       def exec
-        !(@left.exec && @right.exec)
+        (!@left.exec)||(! @right.exec)
       end
   end
 end
